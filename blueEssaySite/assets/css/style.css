@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/* Обнулення */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wrap-all .header {
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 21px;
+  background-color: #03A9F4;
+}
+.wrap-all .header .container .logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.wrap-all .header .container .logo__link {
+  display: block;
+  margin-right: 7px;
+}
+.wrap-all .header .container .logo__link__img {
+  width: 62px;
+  height: 62px;
+}
+.wrap-all .header .container .logo__text {
+  display: block;
+}
+.wrap-all .header .container .logo__text .text-link {
+  text-decoration: none;
+  color: #fff;
+}
+.wrap-all .header .container .logo__text .text-link .blue-site {
+  font-style: italic;
+  font-size: 23px;
+}
+.wrap-all .header .container .logo__text .text-link .essay {
+  font-family: "Poppins-SemiBold";
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ECFA4D;
+}
+.wrap-all .header .container .logo__text .text-link .pro {
+  font-family: "OpenSans-Regular";
+}
