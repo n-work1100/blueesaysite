@@ -8,11 +8,12 @@
 			.container {
 				display: flex;
 				justify-content: start;
+				padding: 0 15px;
 				.logo {
 					display: flex;
 					justify-content: start;
 					align-items: center;
-					margin-right: 180px;
+					margin-right: 150px;
 					&__link {
 						display: block;
 						margin-right: 7px;
@@ -129,77 +130,112 @@
 			}
 		}
 		.blue {
+			position: relative;
 			height: 630px;
-			padding-top: 140px;
-			padding-bottom: 156px;
 			background-color: #fff;
 			background-image: url("../img/header/img_cloud.png");
+			background-size: cover;
+			background-position: center;
+			background-color: rgba(0, 0, 0, 0.01);
 			background-repeat: no-repeat;
-			.container {
-				display: block;
-				.blue__title {
-					font-family: "Poppins-Bold";
-					font-size: 47px;
-					color: $main-color;
-					font-weight: bold;
-					line-height: 1.2;
-				}
-				.blue__sub-title {
+			.blue__wrapp {
+				.container {
 					position: relative;
-					font-family: "Poppins-Bold";
-					font-size: 47px;
-					color: #000;
-					font-weight: bold;
-					margin-bottom: 72px;
+					padding: 140px 15px 156px 15px;
+					display: block;
+					.blue__title {
+						font-family: "Poppins-Bold";
+						font-size: 47px;
+						color: $main-color;
+						font-weight: bold;
+						line-height: 1.2;
+					}
+					.blue__sub-title {
+						position: relative;
+						font-family: "Poppins-Bold";
+						font-size: 47px;
+						color: #000;
+						font-weight: bold;
+						margin-bottom: 72px;
+					}
+					.blue__sub-title::after {
+						content: "";
+						position: absolute;
+						bottom: -30px;
+						left: 0;
+						width: 50px;
+						height: 3px;
+						background-color: #F75E2E;
+					}
+					.blue__sub-title::before {
+						content: "";
+						position: absolute;
+						bottom: -30px;
+						left: 50px;
+						width: 515px;
+						height: 1px;
+						background-color: grey;
+					}
+					.blue__text {
+						font-size: 20px;
+						font-family: "Poppins-Regular";
+						color: #656A70;
+						line-height: 1.5;
+						margin-bottom: 30px;
+					}
+					.blue__link {
+						display: inline-block;
+						border-radius: 3px;
+						background-color: #F75E2E;
+						font-size: 14px;
+						font-family: "Poppins-SemiBold";
+						color: #fff;
+						font-weight: bold;
+						text-transform: uppercase;
+						line-height: 1.2;
+						text-align: center;
+						padding: 14px 45px;
+					}
+					.blue__girl {
+						position: absolute;
+						top: 97px;
+						right: 85px;
+						max-width: 310px;
+						height: 460px;
+						z-index: 2;
+						img {
+							width: 100%;
+						}
+					}
 				}
-				.blue__sub-title::after {
-					content: "";
+				form.blue__form {
+					display: flex;
+					justify-content: space-between;
 					position: absolute;
-					bottom: -30px;
-					left: 0;
-					width: 50px;
-					height: 3px;
-					background-color: #F75E2E;
-				}
-				.blue__sub-title::before {
-					content: "";
-					position: absolute;
-					bottom: -30px;
-					left: 50px;
-					width: 515px;
-					height: 1px;
-					background-color: grey;
-				}
-				.blue__text {
-					font-size: 20px;
-					font-family: "Poppins-Regular";
-					color: #656A70;
-					line-height: 1.5;
-					margin-bottom: 30px;
-				}
-				.blue__link {
-					border-radius: 3px;
-					background-color: #F75E2E;
-					font-size: 14px;
-					font-family: "Poppins-SemiBold";
-					color: #fff;
-					font-weight: bold;
-					text-transform: uppercase;
-					line-height: 1.2;
-					text-align: center;
-					padding: 14px 45px;
-				}
-				.blue__form {
-
-				}
-				.blue__girl {
-					position: absolute;
-					top: 0;
-					right: 0;
-					max-width: 310px;
-					height: 460px;
-					img {
-						width: 100%;
+					bottom: -115px;
+					left:50%;
+					transform:translate(-50%, -50%);
+					width: 1200px;
+					margin: 0 auto;
+					padding: 30px 35px;
+					background-color: $main-color;
+					.blue__form-item {
+						.blue__form-title {
+							display: inline-block;
+							font-family: "Poppins-Medium";
+							font-size: 13px;
+							margin-bottom: 5px;
+							color: #fff;
+						}
+						.blue__form-sel {
+							font-family: "Poppins-Regular";
+							font-size: 13px;
+							border-radius: 3px;
+							background-color: #fff;
+							padding-left: 20px;
+							width: 206px;
+							height: 54px;
+						}
 					}
 				}
 			}
