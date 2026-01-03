@@ -93,6 +93,10 @@ h1, h2, h3, h4, h5, h6 {
   src: url(../fonts/Poppins-Medium.ttf);
 }
 @font-face {
+  font-family: "Poppins-Light";
+  src: url(../fonts/Poppins-Light.ttf);
+}
+@font-face {
   font-family: "Museo";
   src: url(../fonts/museosans-500.otf);
 }
@@ -561,7 +565,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .disc {
-  margin-bottom: 600px;
   position: relative;
   height: 500px;
   background-color: #03A9F4;
@@ -721,6 +724,11 @@ h1, h2, h3, h4, h5, h6 {
   top: -15px;
   left: -16px;
 }
+.disc .container .disc__wrapp .disc__offer .disc__offer-small .small-wrapp .disc-get .disc-get__stars {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+}
 .disc .container .disc__wrapp .disc__offer .disc__offer-small .small-wrapp .small-footer {
   font-size: 18px;
   font-family: "OpenSans-Italic";
@@ -732,6 +740,11 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   bottom: 0;
   right: -52px;
+}
+.disc .container .disc__wrapp .disc__offer .disc__offer-small .small-wrapp .disc-get__scissors {
+  position: absolute;
+  top: 0;
+  right: 20px;
 }
 .disc .disc__cloud {
   position: absolute;
@@ -752,4 +765,61 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 119px;
   left: 66px;
+}
+
+.clients {
+  margin-bottom: 600px;
+  margin-top: 210px;
+  background-color: #fff;
+}
+.clients .container .clients__wrapp {
+  width: 950px;
+  margin: 0 auto;
+  padding: 94px 200px 80px 200px;
+}
+.clients .container .clients__wrapp .clients__title {
+  font-size: 33px;
+  font-family: "Poppins-Medium";
+  color: #000;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.clients .container .clients__wrapp .image-slider {
+  overflow: hidden;
+}
+.clients .container .clients__wrapp .image-slider .image-slider__wrapper .image-slider__slide {
+  text-align: center;
+}
+.clients .container .clients__wrapp .image-slider .image-slider__wrapper .image-slider__slide .image-slider__image {
+  margin: 0 auto;
+  max-width: 60px;
+  margin-bottom: 30px;
+}
+.clients .container .clients__wrapp .image-slider .image-slider__wrapper .image-slider__slide .image-slider__image img {
+  width: 100%;
+}
+.clients .container .clients__wrapp .image-slider .image-slider__wrapper .image-slider__slide .image-slider__text {
+  font-size: 14px;
+  font-family: "Poppins-Light";
+  color: #51555A;
+  line-height: 1.571;
+  margin-bottom: 30px;
+}
+.clients .container .clients__wrapp .image-slider .image-slider__wrapper .image-slider__slide .image-slider__name {
+  font-size: 17px;
+  font-family: "Poppins-SemiBold";
+  color: #0287C3;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+.clients .container .clients__wrapp .image-slider .image-slider__wrapper .image-slider__slide .image-slider__date {
+  font-size: 13px;
+  font-family: "Poppins-Light";
+  color: #A3A6A9;
+  line-height: 1.2;
+}
+.clients .container .clients__wrapp .image-slider .image-slider__wrapper .swiper-slide {
+  overflow: hidden;
 }

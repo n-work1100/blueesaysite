@@ -1,5 +1,4 @@
 .disc {
-	margin-bottom: 600px;
 	position: relative;
 	height: 500px;
 	background-color: $main-color;
@@ -151,6 +150,11 @@
 								top: -15px;
 								left: -16px;
 							}
+							.disc-get__stars {
+								position: absolute;
+								top: -15px;
+								right: -10px;
+							}
 						}
 						.small-footer {
 							font-size: 18px;
@@ -163,6 +167,11 @@
 							position: absolute;
 							bottom: 0;
 							right: -52px;
+						}
+						.disc-get__scissors {
+							position: absolute;
+							top: 0;
+							right: 20px;
 						}
 					}
 				}
