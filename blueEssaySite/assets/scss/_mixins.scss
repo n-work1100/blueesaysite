@@ -1,0 +1,14 @@
+@mixin plus-minus {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 51.5px;
+	height: 100%;
+}
+
+@mixin sub-title {
+	font-size: 33px;
+	font-family: "Poppins-Medium";
+	line-height: 1.2;
+	text-align: center;
+}

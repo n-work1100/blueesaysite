@@ -3,6 +3,7 @@
 @import "null-file";
 @import "variables";
 @import "fonts.scss";
+@import "mixins.scss";
 
 .container {
 	width: $conrainer-width;
@@ -10,6 +11,9 @@
 }
 
 @import "header";
+@import "welcome";
+@import "ad";
+@import "simple";
 
 
 

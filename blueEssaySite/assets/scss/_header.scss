@@ -211,6 +211,7 @@
 				form.blue__form {
 					display: flex;
 					justify-content: space-between;
+					align-items: end;
 					position: absolute;
 					bottom: -115px;
 					left:50%;
@@ -232,9 +233,48 @@
 							font-size: 13px;
 							border-radius: 3px;
 							background-color: #fff;
-							padding-left: 20px;
+							padding-left: 12px;
 							width: 206px;
 							height: 54px;
+						}
+						.pages {
+							display: flex;
+							justify-content: space-between;
+							width: 206px;
+							height: 54px;
+							background-color: #F9FCFC;
+						}
+						.pages__minus {
+							height: 100%;
+							a {
+								@include plus-minus;
+								border-right: solid 1px grey;
+							}
+						}
+						.pages__num {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							width: 103px;
+						}
+						.pages__plus {
+							height: 100%;
+							a {
+								@include plus-minus;
+								border-left: solid 1px grey;
+							}
+						}
+						.pages__minus a:hover, .pages__plus a:hover {
+							box-shadow: 1px 1px 5px gray;
+							background-color: #fff;
+						}
+						.blue__form-btn {
+							width: 206px;
+							height: 54px;
+							font-family: "Poppins-Medium";
+							font-size: 14px;
+							color: #fff;
+							background-color: #0287C3;
 						}
 					}
 				}

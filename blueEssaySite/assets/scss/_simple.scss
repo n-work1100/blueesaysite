@@ -1,0 +1,75 @@
+.simple {
+	margin-bottom: 200px;
+	background-color: #fff;
+	.container {
+		.simple__wrapp {
+			padding: 105px 15px;
+			.simple__title {
+				@include sub-title;
+				color: #000;
+				font-weight: 500;
+				margin-bottom: 87px;
+			}
+			.simple__grid {
+				display: grid;
+				grid-template-columns: repeat(4, 185px);
+				grid-template-rows: auto;
+				justify-self: center;
+				justify-items:	center;
+				grid-gap: 30px;
+				margin: 0 auto;
+				.simple__grid-item {
+					position: relative;
+					text-align: center;
+					justify-items: center;
+					justify-self: center;
+					.simple__img {
+						width: 61px;
+						height: 65px;
+						margin-bottom: 30px;
+						img {
+							width: 100%;
+							height: 100%;
+						}
+					}
+					.simple__sub-title {
+						font-size: 14px;
+						font-family: "Poppins-Medium";
+						color: rgb(30, 32, 33);
+						line-height: 1.2;
+						text-align: center;
+						margin-bottom: 15px;
+						text-transform: uppercase;
+					}
+					.simple__text {
+						font-size: 11px;
+						font-family: "Poppins-Regular";
+						color: rgb(81, 85, 90);
+						line-height: 1.571;
+						text-align: center;
+					}
+				}
+				.simple__grid-item::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					right: -30px;
+					display: block;
+					width: 16px;
+					height: 180px;
+					background-image: url("../img/block_simple/arrow_ourSimple.png");
+				}
+				.simple__grid-item:last-child::before {
+					content: "";
+					background-image: none;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
