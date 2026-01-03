@@ -9,50 +9,7 @@
 	margin: 0 auto;
 }
 
-.wrap-all {
-	.header {
-		width: 100%;
-		padding-top: 17px;
-		padding-bottom: 21px;
-		background-color: $main-color;
-		.container {
-			.logo {
-				display: flex;
-				justify-content: start;
-				align-items: center;
-				&__link {
-					display: block;
-					margin-right: 7px;
-					&__img {
-						width: 62px;
-						height: 62px;
-					}
-				}
-				&__text {
-					display: block;
-					.text-link {
-						text-decoration: none;
-						color: #fff;
-						.blue-site {
-							font-style: italic;
-							font-size: 23px;
-						}
-						.essay {
-							font-family: "Poppins-SemiBold";
-							font-size: 23px;
-							font-weight: 700;
-							text-transform: uppercase;
-							color: #ECFA4D;
-						}
-						.pro {
-							font-family: "OpenSans-Regular";
-						}
-					}
-				}
-			}
-		}
-	}
-}
+@import "header";
 
 
 

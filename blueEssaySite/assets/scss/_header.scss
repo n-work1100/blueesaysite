@@ -1,0 +1,208 @@
+.wrap-all {
+	.header {
+		.header__wrapp{
+			width: 100%;
+			padding-top: 17px;
+			padding-bottom: 21px;
+			background-color: $main-color;
+			.container {
+				display: flex;
+				justify-content: start;
+				.logo {
+					display: flex;
+					justify-content: start;
+					align-items: center;
+					margin-right: 180px;
+					&__link {
+						display: block;
+						margin-right: 7px;
+						&__img {
+							width: 62px;
+							height: 62px;
+						}
+					}
+					&__text {
+						display: block;
+						.text-link {
+							text-decoration: none;
+							color: #fff;
+							.blue-site {
+								font-style: italic;
+								font-size: 23px;
+							}
+							.essay {
+								font-family: "Poppins-SemiBold";
+								font-size: 23px;
+								font-weight: 700;
+								text-transform: uppercase;
+								color: #ECFA4D;
+							}
+							.pro {
+								font-family: "OpenSans-Regular";
+							}
+						}
+					}
+				}
+				.header__nav {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					.menu {
+						.menu__sel {
+							display: inline-block;
+							font-family: "Museo";
+							font-weight: 500;
+							text-transform: uppercase;
+							color: #fff;
+							background-color: $main-color;
+							margin-right: 30px;
+							.menu__option {
+
+							}
+						}
+						.menu__list { 
+							display: inline-block;
+							.menu__item {
+								.menu__link {
+									position: relative;
+									font-family: "Museo";
+									font-weight: 500;
+									text-transform: uppercase;
+									color: #fff;
+									margin-right: 30px;
+								}
+								.menu__link:hover:after {
+									content: "";
+									position: absolute;
+									width: 100%;
+									height: 2px;
+									background-color: #F75E2E;
+									left: 0;
+									bottom: -5px;
+								}
+							}
+						}
+					}
+					.header__call {
+						a {
+							.fa-brands {
+								color: #fff;
+								font-size: 32px;
+								font-weight: 300;
+								margin-right: 25px;
+							}
+						}
+					}
+					.link {
+						.link__item {
+							display: inline-block;
+							font-family: "Poppins-SemiBold";
+							text-transform: uppercase;
+							padding-top: 17px;
+							text-align: center;
+							background-color: #0278AF;
+							color: #fff;
+							border-radius: 3px;
+							width: 104px;
+							height: 44px;
+							font-size: 12px;
+							font-weight: bold;
+							margin-right: 12px;
+							transition: all 0.5s;
+						}
+						.link__item:hover {
+							background-color: #F75E2E;
+						}
+					}
+					.burger {
+						display: flex;
+						justify-content: space-between;
+						flex-direction: column;
+						.burger__line {
+							width: 26px;
+							height: 2px;
+							margin-bottom: 5px;
+							background-color: #fff;
+						}
+					}
+				}
+			}
+		}
+		.blue {
+			height: 630px;
+			padding-top: 140px;
+			padding-bottom: 156px;
+			background-color: #fff;
+			background-image: url("../img/header/img_cloud.png");
+			background-repeat: no-repeat;
+			.container {
+				display: block;
+				.blue__title {
+					font-family: "Poppins-Bold";
+					font-size: 47px;
+					color: $main-color;
+					font-weight: bold;
+					line-height: 1.2;
+				}
+				.blue__sub-title {
+					position: relative;
+					font-family: "Poppins-Bold";
+					font-size: 47px;
+					color: #000;
+					font-weight: bold;
+					margin-bottom: 72px;
+				}
+				.blue__sub-title::after {
+					content: "";
+					position: absolute;
+					bottom: -30px;
+					left: 0;
+					width: 50px;
+					height: 3px;
+					background-color: #F75E2E;
+				}
+				.blue__sub-title::before {
+					content: "";
+					position: absolute;
+					bottom: -30px;
+					left: 50px;
+					width: 515px;
+					height: 1px;
+					background-color: grey;
+				}
+				.blue__text {
+					font-size: 20px;
+					font-family: "Poppins-Regular";
+					color: #656A70;
+					line-height: 1.5;
+					margin-bottom: 30px;
+				}
+				.blue__link {
+					border-radius: 3px;
+					background-color: #F75E2E;
+					font-size: 14px;
+					font-family: "Poppins-SemiBold";
+					color: #fff;
+					font-weight: bold;
+					text-transform: uppercase;
+					line-height: 1.2;
+					text-align: center;
+					padding: 14px 45px;
+				}
+				.blue__form {
+
+				}
+				.blue__girl {
+					position: absolute;
+					top: 0;
+					right: 0;
+					max-width: 310px;
+					height: 460px;
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

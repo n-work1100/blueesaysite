@@ -80,48 +80,208 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins-SemiBold";
   src: url(../fonts/Poppins-SemiBold.ttf);
 }
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "Museo";
+  src: url(../fonts/museosans-500.otf);
+}
 .container {
   width: 1200px;
   margin: 0 auto;
 }
 
-.wrap-all .header {
+.wrap-all .header .header__wrapp {
   width: 100%;
   padding-top: 17px;
   padding-bottom: 21px;
   background-color: #03A9F4;
 }
-.wrap-all .header .container .logo {
+.wrap-all .header .header__wrapp .container {
+  display: flex;
+  justify-content: start;
+}
+.wrap-all .header .header__wrapp .container .logo {
   display: flex;
   justify-content: start;
   align-items: center;
+  margin-right: 180px;
 }
-.wrap-all .header .container .logo__link {
+.wrap-all .header .header__wrapp .container .logo__link {
   display: block;
   margin-right: 7px;
 }
-.wrap-all .header .container .logo__link__img {
+.wrap-all .header .header__wrapp .container .logo__link__img {
   width: 62px;
   height: 62px;
 }
-.wrap-all .header .container .logo__text {
+.wrap-all .header .header__wrapp .container .logo__text {
   display: block;
 }
-.wrap-all .header .container .logo__text .text-link {
+.wrap-all .header .header__wrapp .container .logo__text .text-link {
   text-decoration: none;
   color: #fff;
 }
-.wrap-all .header .container .logo__text .text-link .blue-site {
+.wrap-all .header .header__wrapp .container .logo__text .text-link .blue-site {
   font-style: italic;
   font-size: 23px;
 }
-.wrap-all .header .container .logo__text .text-link .essay {
+.wrap-all .header .header__wrapp .container .logo__text .text-link .essay {
   font-family: "Poppins-SemiBold";
   font-size: 23px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ECFA4D;
 }
-.wrap-all .header .container .logo__text .text-link .pro {
+.wrap-all .header .header__wrapp .container .logo__text .text-link .pro {
   font-family: "OpenSans-Regular";
+}
+.wrap-all .header .header__wrapp .container .header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap-all .header .header__wrapp .container .header__nav .menu .menu__sel {
+  display: inline-block;
+  font-family: "Museo";
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #03A9F4;
+  margin-right: 30px;
+}
+.wrap-all .header .header__wrapp .container .header__nav .menu .menu__list {
+  display: inline-block;
+}
+.wrap-all .header .header__wrapp .container .header__nav .menu .menu__list .menu__item .menu__link {
+  position: relative;
+  font-family: "Museo";
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  margin-right: 30px;
+}
+.wrap-all .header .header__wrapp .container .header__nav .menu .menu__list .menu__item .menu__link:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #F75E2E;
+  left: 0;
+  bottom: -5px;
+}
+.wrap-all .header .header__wrapp .container .header__nav .header__call a .fa-brands {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300;
+  margin-right: 25px;
+}
+.wrap-all .header .header__wrapp .container .header__nav .link .link__item {
+  display: inline-block;
+  font-family: "Poppins-SemiBold";
+  text-transform: uppercase;
+  padding-top: 17px;
+  text-align: center;
+  background-color: #0278AF;
+  color: #fff;
+  border-radius: 3px;
+  width: 104px;
+  height: 44px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 12px;
+  transition: all 0.5s;
+}
+.wrap-all .header .header__wrapp .container .header__nav .link .link__item:hover {
+  background-color: #F75E2E;
+}
+.wrap-all .header .header__wrapp .container .header__nav .burger {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.wrap-all .header .header__wrapp .container .header__nav .burger .burger__line {
+  width: 26px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+.wrap-all .header .blue {
+  height: 630px;
+  padding-top: 140px;
+  padding-bottom: 156px;
+  background-color: #fff;
+  background-image: url("../img/header/img_cloud.png");
+  background-repeat: no-repeat;
+}
+.wrap-all .header .blue .container {
+  display: block;
+}
+.wrap-all .header .blue .container .blue__title {
+  font-family: "Poppins-Bold";
+  font-size: 47px;
+  color: #03A9F4;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.wrap-all .header .blue .container .blue__sub-title {
+  position: relative;
+  font-family: "Poppins-Bold";
+  font-size: 47px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 72px;
+}
+.wrap-all .header .blue .container .blue__sub-title::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #F75E2E;
+}
+.wrap-all .header .blue .container .blue__sub-title::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50px;
+  width: 515px;
+  height: 1px;
+  background-color: grey;
+}
+.wrap-all .header .blue .container .blue__text {
+  font-size: 20px;
+  font-family: "Poppins-Regular";
+  color: #656A70;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.wrap-all .header .blue .container .blue__link {
+  border-radius: 3px;
+  background-color: #F75E2E;
+  font-size: 14px;
+  font-family: "Poppins-SemiBold";
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  padding: 14px 45px;
+}
+.wrap-all .header .blue .container .blue__girl {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 310px;
+  height: 460px;
+}
+.wrap-all .header .blue .container .blue__girl img {
+  width: 100%;
 }
