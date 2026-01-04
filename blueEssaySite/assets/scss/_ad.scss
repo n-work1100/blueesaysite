@@ -5,6 +5,7 @@
 	background-repeat: repeat-y;
 	.container {
 		.ad__wrapp {
+			display: grid;
 			padding: 97px 15px 90px 15px;
 			.ad__title{
 				@include sub-title;
@@ -20,6 +21,7 @@
 				grid-gap: 30px;
 				margin: 0 auto;
 				.ad__grid-item {
+					display: grid;
 					justify-items: center;
 					background-color: #fff;
 					padding: 20px 30px;

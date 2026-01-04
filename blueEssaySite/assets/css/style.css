@@ -429,6 +429,7 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: repeat-y;
 }
 .ad .container .ad__wrapp {
+  display: grid;
   padding: 97px 15px 90px 15px;
 }
 .ad .container .ad__wrapp .ad__title {
@@ -449,6 +450,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 .ad .container .ad__wrapp .ad__grid .ad__grid-item {
+  display: grid;
   justify-items: center;
   background-color: #fff;
   padding: 20px 30px;
@@ -498,6 +500,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
 }
 .simple .container .simple__wrapp {
+  display: grid;
   padding: 105px 15px;
 }
 .simple .container .simple__wrapp .simple__title {
@@ -519,6 +522,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 .simple .container .simple__wrapp .simple__grid .simple__grid-item {
+  display: grid;
   position: relative;
   text-align: center;
   justify-items: center;
@@ -747,9 +751,13 @@ h1, h2, h3, h4, h5, h6 {
   right: 20px;
 }
 .disc .disc__cloud {
+  max-width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
+}
+.disc .disc__cloud img {
+  width: 100%;
 }
 .disc .disc__clouds {
   position: absolute;
@@ -832,8 +840,8 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
 }
+
 .footer {
-  margin-bottom: 600px;
   background-color: #03A9F4;
 }
 .footer .container .footer__wrapp {
@@ -997,4 +1005,115 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer .container .footer__wrapp .footer__bottom .bottom-item:last-child {
   margin-right: 0;
+}
+
+@media (max-width: 1199px) {
+  .wrap-all .header .header__wrapp .container {
+    width: 100%;
+  }
+  .wrap-all .header .header__wrapp .container .logo {
+    margin-right: 20px;
+  }
+  .wrap-all .header .header__wrapp .container .header__nav .menu .menu__sel {
+    margin-right: 20px;
+  }
+  .wrap-all .header .header__wrapp .container .header__nav .header__call a .fa-brands {
+    font-size: 24px;
+  }
+  .wrap-all .header .header__wrapp .container .header__nav .link {
+    margin-right: 20px;
+  }
+  .wrap-all .header .header__wrapp .container .header__nav .link .link__item {
+    padding-top: 11px;
+    width: 80px;
+    height: 30px;
+  }
+  .wrap-all .header .blue .blue__wrapp .container {
+    width: 1024px;
+    padding: 40px 15px 156px 15px;
+  }
+  .wrap-all .header .blue .blue__wrapp .container .blue__title {
+    font-size: 40px;
+  }
+  .wrap-all .header .blue .blue__wrapp .container .blue__sub-title {
+    font-size: 40px;
+  }
+  .wrap-all .header .blue .blue__wrapp .container .blue__girl {
+    top: 156px;
+    right: 40px;
+  }
+  .wrap-all .header .blue .blue__wrapp form.blue__form {
+    width: 1024px;
+    padding: 20px 35px;
+  }
+  .wrap-all .header .blue .blue__wrapp form.blue__form .blue__form-item .blue__form-title {
+    font-size: 11px;
+  }
+  .wrap-all .header .blue .blue__wrapp form.blue__form .blue__form-item .blue__form-sel {
+    font-size: 12px;
+    border-radius: 6px;
+    padding-left: 12px;
+    width: 150px;
+    height: 35px;
+  }
+  .wrap-all .header .blue .blue__wrapp form.blue__form .blue__form-item .pages {
+    width: 150px;
+    height: 35px;
+  }
+  .wrap-all .header .blue .blue__wrapp form.blue__form .blue__form-item .blue__form-btn {
+    width: 150px;
+    height: 35px;
+    font-size: 14px;
+  }
+  .wrap-all .welcome {
+    background-color: #fff;
+  }
+  .wrap-all .welcome .container {
+    width: 1024px;
+  }
+  .wrap-all .welcome .container .welcome__wrapp {
+    padding-bottom: 10px;
+  }
+  .wrap-all .welcome .container .welcome__wrapp .welcome__item .welcome__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .wrap-all .welcome .container .welcome__wrapp .welcome__item .welcome__text {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .wrap-all .ad .container {
+    width: 1024px;
+  }
+  .wrap-all .simple {
+    background-color: #fff;
+  }
+  .wrap-all .simple .container {
+    width: 1024px;
+  }
+  .wrap-all .disc .container {
+    width: 1024px;
+  }
+  .wrap-all .disc .container .disc__wrapp .disc__offer .disc__offer-small .small-wrapp .disc-get {
+    margin-bottom: 19px;
+  }
+  .wrap-all .disc .disc__rocket {
+    top: 62px;
+    left: 4px;
+  }
+  .wrap-all .clients .container {
+    width: 1024px;
+  }
+  .wrap-all .footer .container {
+    width: 1024px;
+  }
+  .wrap-all .footer .container .footer__wrapp .footer__top .logo {
+    margin-right: 0px;
+  }
+  .wrap-all .footer .container .footer__wrapp .footer__top .footer-nav .footer-nav__menu .footer-nav__item:last-child {
+    margin-right: 20px;
+  }
+  .wrap-all .footer .container .footer__wrapp .footer__bottom .bottom-item {
+    margin-right: 45px;
+  }
 }

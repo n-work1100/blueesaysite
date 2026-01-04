@@ -2,6 +2,7 @@
 	background-color: #fff;
 	.container {
 		.simple__wrapp {
+			display: grid;
 			padding: 105px 15px;
 			.simple__title {
 				@include sub-title;
@@ -18,6 +19,7 @@
 				grid-gap: 30px;
 				margin: 0 auto;
 				.simple__grid-item {
+					display: grid;
 					position: relative;
 					text-align: center;
 					justify-items: center;

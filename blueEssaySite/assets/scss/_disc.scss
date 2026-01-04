@@ -180,9 +180,13 @@
 		}
 	}
 	.disc__cloud{
+		max-width: 100%;
 		position: absolute;
 		bottom: 0;
 		left: 0;
+		img {
+			width: 100%;
+		}
 	}
 	.disc__clouds {
 		position: absolute;

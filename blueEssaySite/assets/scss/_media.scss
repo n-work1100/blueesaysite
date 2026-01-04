@@ -1,0 +1,159 @@
+// 1200px
+@media (max-width: 1199px) {
+	.wrap-all {
+		.header {
+			.header__wrapp{
+				.container {
+					width: 100%;
+					.logo {
+						margin-right: 20px;
+					}
+					.header__nav {
+						.menu {
+							.menu__sel {
+								margin-right: 20px;
+							}
+						}
+						.header__call {
+							a {
+								.fa-brands {
+									font-size: 24px;
+								}
+							}
+						}
+						.link {
+							margin-right: 20px;
+							.link__item {
+								padding-top: 11px;
+								width: 80px;
+								height: 30px;
+							}
+						}
+					}
+				}
+			}
+			.blue {
+				.blue__wrapp {
+					.container {
+						width: 1024px;
+						padding: 40px 15px 156px 15px;
+						.blue__title {
+							font-size: 40px;
+						}
+						.blue__sub-title {
+							font-size: 40px;
+						}
+						.blue__girl {
+							top: 156px;
+							right: 40px;
+						}
+					}
+					form.blue__form {
+						width: 1024px;
+						padding: 20px 35px;
+						.blue__form-item {
+							.blue__form-title {
+								font-size: 11px;
+							}
+							.blue__form-sel {
+								font-size: 12px;
+								border-radius: 6px;
+								padding-left: 12px;
+								width: 150px;
+								height: 35px;
+							}
+							.pages {
+								width: 150px;
+								height: 35px;
+							}
+							.blue__form-btn {
+								width: 150px;
+								height: 35px;
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.welcome {
+			background-color: #fff;
+			.container {
+				width: 1024px;
+				.welcome__wrapp {
+					padding-bottom: 10px;
+					.welcome__item {
+						.welcome__title {
+							font-size: 25px;
+							margin-bottom: 20px;
+						}
+						.welcome__text {
+							font-size: 13px;
+							margin-bottom: 15px;
+						}
+					}
+				}
+			}
+		}
+		.ad {
+			.container {
+				width: 1024px;
+			}
+		}
+		.simple {
+			background-color: #fff;
+			.container {
+				width: 1024px;
+			}
+		}
+		.disc {
+			.container {
+				width: 1024px;
+				.disc__wrapp {
+					.disc__offer {
+						.disc__offer-small {
+							.small-wrapp {
+								.disc-get {
+									margin-bottom: 19px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.disc__rocket {
+				top: 62px;
+				left: 4px;
+			}
+		}
+		.clients {
+			.container {
+				width: 1024px;
+			}
+		}
+		.footer {
+			.container {
+				width: 1024px;
+				.footer__wrapp {
+					.footer__top {
+						.logo {
+							margin-right: 0px;
+						}
+						.footer-nav {
+							.footer-nav__menu {
+								.footer-nav__item:last-child {
+									margin-right: 20px;
+								}
+							}
+						}
+					}
+					.footer__bottom {
+						.bottom-item {
+							margin-right: 45px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
