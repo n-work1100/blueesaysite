@@ -1,5 +1,4 @@
 .clients {
-	margin-bottom: 600px;
 	margin-top: 210px;
 	background-color: #fff;
 	.container {
@@ -16,6 +15,7 @@
 				margin-bottom: 35px;
 			}
 			.image-slider {
+				position: relative;
 				overflow: hidden;
 				.image-slider__wrapper {
 					.image-slider__slide {
@@ -50,23 +50,38 @@
 							line-height: 1.2;
 						}
 					}
-					.swiper-slide {
-						overflow: hidden;
-					}
 				}
 				.swiper-wrapper {
 				
+				}
+				.swiper-button-prev,
+				.swiper-button-next {
+					position: absolute;
+					color: #000;
+					font-size: 80px;
+				}
+				.swiper-button-prev::after {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
 				}
 			}
 			.swiper-container {
 			
 			}
-			.swiper-button-prev {
-			
-			}
-			.swiper-button-next {
-			
-			}
+			// .swiper-button-prev,
+			// .swiper-button-next {
+			// 	position: absolute;
+			// 	color: #000;
+			// 	font-size: 80px;
+			// }
+			// .swiper-button-prev::after {
+			// 	content: "";
+			// 	position: absolute;
+			// 	top: 0;
+			// 	left: 0;
+			// }
 			.swiper-pagination {
 			
 			}
