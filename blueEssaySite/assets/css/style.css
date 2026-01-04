@@ -219,12 +219,6 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   flex-direction: column;
 }
-.wrap-all .header .header__wrapp .container .header__nav .burger .burger__line {
-  width: 26px;
-  height: 2px;
-  margin-bottom: 5px;
-  background-color: #fff;
-}
 .wrap-all .header .blue {
   position: relative;
   height: 630px;
@@ -1290,5 +1284,135 @@ h1, h2, h3, h4, h5, h6 {
   }
   .wrap-all .footer .container .footer__wrapp .footer__bottom .bottom-item p {
     font-size: 9px;
+  }
+  .wrap-all .footer .container .footer__wrapp .footer__bottom .bottom-item a.a-email .fa-solid {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .wrap-all .header .header__wrapp .container {
+    width: 320px;
+    flex-direction: column;
+  }
+  .wrap-all .header .header__wrapp .container .header__nav {
+    position: relative;
+  }
+  .wrap-all .header .header__wrapp .container .header__nav .menu {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    width: 150px;
+    height: 80px;
+    background-color: #03A9F4;
+  }
+  .wrap-all .header .header__wrapp .container .header__nav .menu.active {
+    position: fixed;
+    top: 200px;
+    background: rgba(3, 169, 244, 0.9);
+    z-index: 3;
+    transition: all 0.5s;
+    padding: 5px;
+  }
+  .wrap-all .header .header__wrapp .container .header__nav .burger {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    top: -60px;
+    right: -235px;
+  }
+  .wrap-all .header .header__wrapp .container .header__nav .burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    top: 9px;
+    width: 30px;
+    height: 2px;
+  }
+  .wrap-all .header .header__wrapp .container .header__nav .burger::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    transition: all 0.1s;
+  }
+  .wrap-all .header .header__wrapp .container .header__nav .burger::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: all 0.1s;
+  }
+  .wrap-all .header .header__wrapp .container .header__nav .burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .wrap-all .header .header__wrapp .container .header__nav .burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .wrap-all .header .header__wrapp .container .header__nav .burger.active span {
+    transform: scale(0);
+  }
+  .wrap-all .header .header__wrapp .container .header__nav .burger:hover {
+    cursor: pointer;
+  }
+  .wrap-all .header .header__wrapp .container .header__nav .link {
+    margin-right: 0;
+    margin-top: 5px;
+  }
+  .wrap-all .header .blue .blue__wrapp .container {
+    width: 320px;
+    padding: 20px 15px 0px 15px;
+  }
+  .wrap-all .header .blue .blue__wrapp .container .blue__title {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  .wrap-all .header .blue .blue__wrapp .container .blue__sub-title {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+  .wrap-all .header .blue .blue__wrapp .container .blue__sub-title::after {
+    bottom: -12px;
+  }
+  .wrap-all .header .blue .blue__wrapp .container .blue__sub-title::before {
+    width: 215px;
+    bottom: -12px;
+  }
+  .wrap-all .header .blue .blue__wrapp .container .blue__text {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .wrap-all .header .blue .blue__wrapp .container .blue__girl {
+    right: -165px;
+    top: 301px;
+    width: 140px;
+    height: 210px;
+  }
+  .wrap-all .header .blue .blue__wrapp form.blue__form {
+    flex-direction: column;
+    width: 174px;
+    padding: 20px 36px;
+    bottom: -381px;
+  }
+  .wrap-all .header .blue .blue__wrapp form.blue__form .blue__form-item .blue__form-btn {
+    width: 100px;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  .wrap-all .welcome .container {
+    width: 320px;
+  }
+  .wrap-all .welcome .container .welcome__wrapp {
+    padding-top: 265px;
   }
 }
